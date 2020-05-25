@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+
+    <div class="nav_bar">
+        <a href="fuel_estimator.html">
+            <div class="back_icon">
+                <img src="./images/back.png" alt="" height="20" width="20">
+            </div>
+        </a>
+
+        <a href="index.html">
+            <div class="logo">
+                <h3>Kiwi Car Rentals</h3>
+            </div>
+        </a>
+        <a href="">
+            <div class="menu_icon">
+                <img src="./images/menu.png" alt="" height="20" width="20">
+            </div>
+        </a>
+
+
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+
+
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+
+
+
+    <div class="payment_section">
+
+        <div id="location_update"></div>
+        <div id="date_update"></div>
+        <div id="time_update"></div>
+        <div id="person_update"></div>
+        <div id="car_update"></div>
+        <div id="distance_update"></div>
+        <div id="fuel_update"></div>
+
+
+        <!-- <div class="payment_heading">
+            <h3>Total cost</h3>
+        </div> -->
+
+
+
+       
+            <h3 id="total_bill">Total Bill</h3>
+
+
+
+
+       
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+
+
+
+    <script>
+        
+        var my_location = window.localStorage.getItem("user_location");
+        var my_startdate = window.localStorage.getItem("user_startdate");
+        var my_enddate = window.localStorage.getItem("user_enddate");
+        var my_people = window.localStorage.getItem("user_people");
+        var my_car = window.localStorage.getItem("user_vehicle");
+        
+        var my_fuel = window.localStorage.getItem("user_fuelcost");
+        var my_distance = window.localStorage.getItem("user_distance");
+        
+        var my_dadiff = window.localStorage.getItem("user_daydifference");
+        var my_bill = window.localStorage.getItem("total_bill");
+       
+        
+        
+
+        var carObj = {
+            "hyundai": ["$129 / day", "8.5 l / 100km", "Hyndai i10", 8.5,129],
+            "corolla": ["$144 / day", "9.7 l / 100km", "Toyota Corolla", 9.7,144],
+            "jaquarxf": ["$144 / day", "9.7 l / 100km", "Jaquar XF", 9.7,144],
+            "fordfocus": ["$144 / day", "9.7 l / 100km", "Ford Focus", 9.7,144],
+            "mercedesrv": ["$200 / day", "17 l / 100km", "Mercedes Rv", 17,200],
+            "fordrv": ["$200 / day", "17 l / 100km", "Ford RV", 17,200],
+            "yamaha15": ["$109 / day", "3.7 l / 100km", "Yamaha 15", 3.7,109],
+            "bmwx5": ["$109 / day", "3.7 l / 100km", "Bmw X5", 3.7,109],
+
+        };
+
+
+
+        document.getElementById("location_update").innerHTML = "Pickup location : " + my_location + " " + '<span class="fs40"><a href="itinery.html">edit</a></span>';
+
+        document.getElementById("date_update").innerHTML = "Pickup date : " + my_startdate + " -  " + my_enddate + '<span class="fs40"><a href="itinery.html">edit</a></span>';
+
+        document.getElementById("person_update").innerHTML = "Total passengers: " + my_people + '<span class="fs40"><a href="fuel_estimator.html">edit</a></span>';
+
+        document.getElementById("distance_update").innerHTML = "Total distance: " + my_distance + "km" + '<span class="fs40"><a href="fuel_estimator.html">edit</a></span>';
+
+        document.getElementById("car_update").innerHTML = "Car : " + carObj[my_car][2] + " " + carObj[my_car][1] + '<span class="fs40"><a href="fuel_estimator.html">edit</a></span>';
+
+       
+         document.getElementById("fuel_update").innerHTML = "Fuel consumption : " +  my_fuel + " " +"L"  ;
+
+          document.getElementById("total_bill").innerHTML = "Total cost : " + "$" + my_bill ;
+
+
+
+
+       
+
+
+
+
+
+
+        
+
+
+
+
+
+        var car_cost = carObj[my_car][4];
+
+        var total_carcost = my_dadiff * car_cost;
+
+        window.localStorage.setItem("car_cost",total_carcost);
+
+        
+        var total_rentalcost = total_carcost;
+
+        window.localStorage.setItem("total_bill",total_rentalcost);
+
+    </script>
+
+
+</body>
+
+</html>

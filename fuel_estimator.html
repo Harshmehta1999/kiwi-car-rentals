@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,Open+Sans:300,400&display=swap"
+        rel="stylesheet">
+        
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+
+    <div class="nav_bar">
+        <a href="cars.html">
+            <div class="back_icon">
+                <img src="./images/back.png" alt="" height="20" width="20">
+            </div>
+        </a>
+
+        <a href="index.html">
+            <div class="logo">
+                <h3>Kiwi Car Rentals</h3>
+            </div>
+        </a>
+        <a href="">
+            <div class="menu_icon">
+                <img src="./images/menu.png" alt="" height="20" width="20">
+            </div>
+        </a>
+
+
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+
+
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+
+
+<!-- 
+    <div class="fuel_section">
+
+        <div id="location_update"></div>
+        <div id="date_update"></div>
+        <div id="time_update"></div>
+        <div id="person_update"></div>
+        <div id="car_update"></div>
+
+
+        <div class="fuel_heading">
+            <h3>Fuel estimator</h3>
+        </div>
+
+        <div class="fuel_calculator">
+            <input name="fuelcalculation" placeholder="enter your approx distance" id="fuel_id">
+        </div>
+
+   
+
+
+
+        <div class="payment_btn">
+            Payment
+
+        </div>
+
+
+
+
+
+    </div> -->
+
+    <div class="data-block">
+        <div class="datablock-heading">
+            <h3>Booking details</h3>
+        </div>
+        <div class="data-block-div">
+              <div class="location-data-block" id="location_update"></div>
+        <div class="pickupdate-data-block" id="date_update"></div>
+        <div class="people-data-block"id="person_update"></div>
+        <div class="people-data-block"id="car_update"></div>
+        </div>
+      
+        
+    </div>
+
+    <div class="fuel-estimator">
+        <div class="fuel-heading">
+            <h3>Fuel calculator</h3>
+        </div>
+
+        <div class="fuel-input">
+            <img src="./images/distance-final.png" alt="">
+            <input name="fuelcalculation" placeholder="enter your approx distance" id="fuel_id">
+        </div>
+
+        <div class="payment_btn">
+            Payment
+
+        </div>
+    </div>
+
+
+
+
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+    <!-- FUEL ESTIMATOR SECTION -->
+
+
+
+    <script>
+        var my_location = window.localStorage.getItem("user_location");
+        var my_startdate = window.localStorage.getItem("user_startdate");
+        var my_enddate = window.localStorage.getItem("user_enddate");
+        var my_people = window.localStorage.getItem("user_people");
+        var my_car = window.localStorage.getItem("user_vehicle");
+        
+
+        var carObj = {
+            "hyundai": ["$129 / day", "8.5 l / 100km", "Hyndai i10", 8.5,129],
+            "corolla": ["$144 / day", "9.7 l / 100km", "Toyota Corolla", 9.7,144],
+            "jaquarxf": ["$144 / day", "9.7 l / 100km", "Jaquar XF", 9.7,144],
+            "fordfocus": ["$144 / day", "9.7 l / 100km", "Ford Focus", 9.7,144],
+            "mercedesrv": ["$200 / day", "17 l / 100km", "Mercedes Rv", 17,200],
+            "fordrv": ["$200 / day", "17 l / 100km", "Ford RV", 17,200],
+            "yamaha15": ["$109 / day", "3.7 l / 100km", "Yamaha 15", 3.7,109],
+            "bmwx5": ["$109 / day", "3.7 l / 100km", "Bmw X5", 3.7,109],
+
+        };
+
+
+        console.log(carObj[my_car])
+
+        document.getElementById("location_update").innerHTML = "Pickup location : " + my_location + " " + '<div class="edit-icon-box"><a href="itinery.html"><img class="edit-icon" src="./images/edit-outline.svg" /></a></div>';
+
+            document.getElementById("date_update").innerHTML = "Pickup date : " + my_startdate + " -  " + my_enddate + '<div class="edit-icon-box-date"><a href="itinery.html"><img class="edit-icon" src="./images/edit-outline.svg" /></a></div>';
+
+            document.getElementById("person_update").innerHTML = "Total passengers: " + my_people + '<div class="edit-icon-box-people"><a href="itinery.html"><img class="edit-icon" src="./images/edit-outline.svg" /></a></div>';
+
+        document.getElementById("car_update").innerHTML = "Car : " +carObj[my_car][2]+ " " +carObj[my_car][1]+ '<div class="edit-icon-box-people"><a href="itinery.html"><img class="edit-icon" src="./images/edit-outline.svg" /></a></div>';
+
+
+
+
+
+        var average = carObj[my_car][3];
+        var fuel_input = document.getElementById('fuel_id');
+        fuel_input.addEventListener("blur", fuel_calculation);
+
+        function fuel_calculation(events) {
+
+
+
+            var fuel_value = this.value;
+            var total_fuelcost = fuel_value * average/100;
+           
+
+            console.log(Math.round(total_fuelcost));
+
+            var noentery = document.querySelector(".payment_btn");
+            
+            noentery.addEventListener("click", entry);
+
+            function entry(a) {
+                // alert("dhdh")
+                if (fuel_value == 0) {
+
+                    alert("please input your distance");
+
+
+                  
+                }
+
+                else{
+                    window.location.href = "payment.html";
+                }
+            }
+
+
+            window.localStorage.setItem("user_fuelcost", total_fuelcost);
+            window.localStorage.setItem("user_distance", fuel_value);
+
+
+        }
+
+
+    
+
+
+    </script>
+
+
+</body>
+
+</html>

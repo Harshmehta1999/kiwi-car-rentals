@@ -1,0 +1,219 @@
+.itinery_section {
+    padding: 20px;
+    .itinery_heading {
+        color: #F8D145;
+        margin-top: 30px;
+    }
+    .pickup_from,
+    .pickup_date,
+    .pickup_time {
+        margin-top: 60px;
+        h4 {
+            color: white;
+        }
+    }
+    .pickup_from_input {
+        margin-top: 8px;
+    }
+    .pickupdate_inputs {
+        width: 40%;
+        padding: 10px;
+    }
+    .vehicle_btn {
+        background-color: #F8D145;
+        width: 150px;
+        padding: 10px;
+        border-radius: 7px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.date-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    color: white;
+    flex-wrap: wrap;
+    font-family: 'open sans', 'sans serif'a
+}
+
+.date-wrapper>div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.date-field {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-field img{
+    padding-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.date-wrapper>div>label {
+    white-space: nowrap;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+.pickup_date h4 {
+    color: white;
+    margin-top: 70px;
+}
+
+// .datepicker-start {
+//     position: absolute;
+//     z-index: 5;
+//     width: 90%;
+//     padding: 0.4rem
+// }
+
+// .datepicker-return {
+//     position: absolute;
+//     z-index: 5;
+//     width: 90%;
+//     padding: 0.4rem;
+//     color: white;
+// }
+
+.itinerary-section{
+    padding: 20px;
+    .itinerary-heading{
+        color: #F8D145;
+        h3{
+            margin-top: 30px;
+        }
+    }
+
+    .pickupfrom-card{
+        background-color: #F8D145;
+
+        margin-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        .pickupfrom-heading{
+        margin-top: 25px;
+        padding-top: 15px;
+    }
+    .pickupfrom-selectbox{
+        padding-bottom: 30px;
+    }
+    }
+
+    
+    .pickupdate-card{
+        background-color: #F8D145;
+        margin-top: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        .pickupdate-heading{
+            padding-top: 15px;
+        }
+
+        .pickupdate-box{
+            margin-top: 20px;
+            padding-bottom: 30px;
+            
+
+            .pickupdate-startbox{
+                background-color: white;
+                // color: #212121;
+                // background-image: url(/images/planner.png);
+                // background-size: 20px;
+                // background-repeat: no-repeat;
+                // background-position: left;;
+                // background-position-x: 10px;
+            }
+
+            .pickupdate-endbox{
+                background-color: white;
+                margin-top: 20px;
+                // background-image: url(/images/planner.png);
+                // background-size: 20px;
+                // background-repeat: no-repeat;
+                // background-position: left;;
+                // background-position-x: 10px;
+                
+            }
+
+            ::placeholder {
+                color: #212121;
+                opacity: .4;
+                padding-left: 10px;
+       
+              }
+              
+        }
+    }
+
+
+    .people-card{
+        background-color: #F8D145;
+        margin-top: 35px;
+        padding-right: 20px;
+        padding-left: 20px;
+        
+
+        .people-heading{
+            padding-top: 15px;
+        }
+
+        .number_section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-bottom: 30px;
+            .numbers {
+                color: #212121;
+                // background-color: white;
+                border: 2px solid black;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                padding: 5px;
+                
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+
+            // #numbers_id{
+            //     background-color: white;
+            // }
+        }
+    }
+
+
+    .vehicle_btn {
+        background-color: white;
+        width: 150px;
+        padding: 10px;
+        border-radius: 7px;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+
+
+    
+
+   
+}
+
+
+
+
+
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,Open+Sans:300,400&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/nice-select.css">
+
+    <link rel="stylesheet" href="./css/pikaday.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/styles.css">
+
+
+    <title>Document</title>
+
+    <style>
+        .change_color {
+            background-color: white;
+            color: black !important;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="./js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./js/pikaday.js"></script>
+
+</head>
+
+<body>
+    <div class="itinery_fullpage">
+
+
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <div class="nav_bar">
+            <a href="index.html">
+                <div class="back_icon">
+                    <img src="./images/back.png" alt="" height="20" width="20">
+                </div>
+            </a>
+
+            <a href="index.html">
+                <div class="logo">
+                    <h3>Kiwi Car Rentals</h3>
+                </div>
+            </a>
+            <a href="">
+                <div class="menu_icon">
+                    <img src="./images/menu.png" alt="" height="20" width="20">
+                </div>
+            </a>
+
+
+
+        </div>
+
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+        <!-- NAVIGATION -->
+
+        <!-- ITINERY SECTION -->
+        <!-- ITINERY SECTION -->
+        <!-- ITINERY SECTION -->
+
+        <!-- <div class="itinery_section">
+
+            <div class="itinery_heading">
+                <h3>Create your itinery</h3>
+            </div>
+
+            <div class="pickup_section">
+
+                <div class="pickup_from">
+                    <h4>Pickup from</h4>
+                </div>
+
+
+    
+
+                <select class="nice-select wide" id="place">
+
+                    <option value="Auckland">Auckland</option>
+                    <option value="Wellington">Wellington</option>
+                    <option value="Christchurch">Christchurch</option>
+                    <option value="Queenstown">Queenstown</option>
+
+                </select>
+
+
+                <div class="pickup_date">
+                    <h4>Pickup date</h4>
+                </div>
+
+                <div class="date-wrapper">
+
+
+                    <div>
+                        <label for="departuredate">Departure Date:</label>
+                        <div class="date-field">
+                            <input name="departuredate" placeholder="departure date" class="datepicker-start">
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <label for="returndate">Return Date:</label>
+                        <div class="date-field">
+                            <input name="returndate" placeholder="return date" class="datepicker-return">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="vehicle_btn">
+                    
+                        Book now
+                    
+
+                </div>
+
+
+
+            </div>
+        </div> -->
+
+        <!-- <div class="itinery_section">
+
+            <div class="itinery_heading">
+                <h3>Create your itinery</h3>
+            </div>
+
+            <div class="pickup_section">
+                
+
+                <div class="pickup_from">
+                    <div class="pickup-text">
+                        <h4>Pickup from</h4> 
+          
+                 
+                        
+                    </div>
+                    <select class="nice-select wide" id="place">
+                                      
+
+                    <option value="Auckland" >Auckland</option>       
+                    <option value="Wellington">Wellington</option>
+                    <option value="Christchurch">Christchurch</option>
+                    <option value="Queenstown">Queenstown</option> 
+                    
+
+                    </select>
+                    
+           
+                </div>
+
+
+
+
+
+
+
+                <div class="pickup_date">
+                    <h4>Pickup date</h4>
+                </div>
+
+                <div class="date-wrapper">
+
+
+                    <div>
+                        <label for="departuredate">Departure Date:</label>
+                        <div class="date-field">
+                            <input name="departuredate" placeholder="departure date" class="datepicker-start">
+
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <label for="returndate">Return Date:</label>
+                        <div class="date-field">
+                            <input name="returndate" placeholder="return date" class="datepicker-return">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="vehicle_btn">
+                    
+                        Book now
+                    
+
+                </div>
+
+
+
+            </div>
+        </div> -->
+
+
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+
+        <div class="itinerary-section">
+            <div class="itinerary-heading">
+                <h3>
+                    Create your itinerary
+                </h3>
+            </div>
+
+            <div class="pickupfrom-card">
+                <div class="pickupfrom-heading">
+                    <h4>Pick up from</h4>
+                </div>
+
+                <div class="pickupfrom-selectbox" >
+                    <select class="nice-select wide" id="place">
+                
+                        <option value="" selected>select your pick up location</option>
+
+                        <option value="Auckland">Auckland</option>
+                        <option value="Wellington">Wellington</option>
+                        <option value="Christchurch">Christchurch</option>
+                        <option value="Queenstown">Queenstown</option>
+
+
+                    </select>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div class="pickupdate-card">
+                <div class="pickupdate-heading">
+                    <h4>Pick up Date</h4>
+                </div>
+                <div class="pickupdate-box">
+
+                    <div class="pickupdate-startbox">
+                        <!-- <label for="departuredate">Departure Date:</label> -->
+                        <div class="date-field">
+                            <img src="./images/planner.png" alt="">
+                            <input name="departuredate" placeholder="Start date" class="datepicker-start">
+                        </div>
+                    </div>
+
+                    <div class="pickupdate-endbox">
+
+                        <!-- <label for="returndate">Return Date:</label> -->
+                        <div class="date-field">
+                            <img src="./images/planner.png" alt="">
+                            <input name="returndate" placeholder="Return date" class="datepicker-return">
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+
+
+            <div class="people-card">
+                <div class="people-heading">
+                    <h4>How many people</h4>
+                </div>
+
+                <div class="number_section" id="all_numbers" >
+                    <div class="numbers" data-value="1" id="one" >1</div>
+                    <div class="numbers" data-value="2" id="two">2</div>
+                    <div class="numbers" data-value="3" id="three">3</div>
+                    <div class="numbers" data-value="4" id="four">4</div>
+                    <div class="numbers" data-value="5" id="five">5</div>
+                    <div class="numbers" data-value="6" id="six">6</div>
+    
+                </div>
+    
+
+
+
+            </div>
+
+            <div class="vehicle_btn">
+                <a href="cars.html">
+                    Find my vehicle
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+        <!-- MY SECTION -->
+
+
+    </div>
+    <!-- ITINERY SECTION -->
+    <!-- ITINERY SECTION -->
+    <!-- ITINERY SECTION -->
+
+    <script>
+        // $('.nice-select').niceSelect('update');
+
+
+
+
+
+
+        var userObj = {
+            startdate: 0,
+            returndate: 0,
+            dayDifference: 0,
+
+
+
+        };
+
+
+
+        var startPicker = new Pikaday({
+            field: document.querySelector('.datepicker-start'),
+            format: "D MMM YYYY",
+            minDate: moment().toDate(),
+            theme: 'dark-theme',
+
+            onSelect: function () {
+                var userChoice = startPicker.getMoment().format('ll');
+                userObj.startdate = startPicker.getMoment().format('ll');
+
+                console.table(userObj);
+                calculateDays();
+                window.localStorage.setItem("user_startdate", userChoice);
+
+
+            }
+
+
+
+
+
+        });
+
+        var returnPicker = new Pikaday({
+            field: document.querySelector('.datepicker-return'),
+            format: "D MMM YYYY",
+            minDate: moment().toDate(),
+            theme: 'dark-theme',
+
+            onSelect: function () {
+                var userChoice = returnPicker.getMoment().format('ll');
+                userObj.returndate = returnPicker.getMoment().format('ll');
+                console.table(userObj);
+                calculateDays();
+                window.localStorage.setItem("user_enddate", userChoice);
+            }
+
+
+        });
+
+        function calculateDays() {
+
+            if ((userObj.startdate == 0) || (userObj.returndate == 0)) {
+                // bail out if both dates have not been set
+                console.log("dates incomplete");
+                return false;
+            }
+
+
+            var start = moment(userObj.startdate);
+            var end = moment(userObj.returndate);
+            var diff = end.diff(start, "days");
+
+            userObj.dayDifference = diff;
+            window.localStorage.setItem("user_daydifference", diff);
+
+
+
+
+            console.table(userObj);
+
+
+        }
+
+
+
+
+
+
+        var submitButton = document.querySelector(".vehicle_btn");
+        submitButton.addEventListener("click", days_validation);
+
+        function days_validation(c) {
+
+
+            var day_display = window.localStorage.getItem("user_daydifference");
+
+
+            if (day_display <= 0) {
+
+                alert("please slect positive dates");
+
+
+
+
+
+            }
+
+            else {
+                window.location.href = "person_page.html";
+            }
+
+        }
+
+
+        submitButton.addEventListener("click", onSubmit);
+
+        function onSubmit(event) {
+            console.log("submit attempt");
+
+            var date_check_1 = startPicker;
+            var date_check_2 = returnPicker;
+
+            if (date_check_1 == false || date_check_2 == false) {
+                event.preventDefault();
+                alert("please fill all the inputs");
+            }
+
+            else {
+
+            }
+
+        }
+
+
+
+
+        var place_input = document.getElementById('place');
+
+        place_input.addEventListener('blur', function () {
+            var pickup_location = this.value;
+            console.log(pickup_location);
+
+            window.localStorage.setItem("user_location", pickup_location);
+
+        });
+
+
+        var my_location = window.localStorage.getItem("user_location");
+        var my_startdate = window.localStorage.getItem("user_startdate");
+        var my_enddate = window.localStorage.getItem("user_enddate");
+
+
+
+        // document.getElementById("location_update").innerHTML = "Pickup location : " + my_location + " " + '<span class="fs40"><a href="itinery.html">edit</a></span>';
+
+        // document.getElementById("date_update").innerHTML = "Pickup date : " + my_startdate + " -  " + my_enddate + '<span class="fs40"><a href="itinery.html">edit</a></span>';
+
+
+        var people_select = document.getElementById('all_numbers');
+
+
+        people_select.addEventListener('click', function (e) {
+         
+            var total_people = this.value;
+            total_people = e.target.getAttribute("data-value");
+
+            window.localStorage.setItem("user_people", total_people);
+
+
+
+        });
+
+        var next_btn_listner = document.querySelector(".vehicle_btn");
+        next_btn_listner.addEventListener("click",selected_person);
+        
+
+        function selected_person(){
+
+            var selected_people = window.localStorage.getItem("user_people");
+
+            if(selected_people>=1){
+                window.location.href="cars.html";
+            }else{
+                alert("please select number of person");
+            }
+        }
+
+
+
+
+
+        var number_btn = document.querySelectorAll('.numbers');
+
+
+        for (var i = 0; i < number_btn.length; i++) {
+            var number_elements = number_btn[i];
+            number_elements.addEventListener("click", onNumberClicked);
+
+
+        }
+
+        function onNumberClicked(e) {
+
+            for (var i = 0; i < number_btn.length; i++) {
+                var number_elements = number_btn[i];
+                number_elements.classList.remove("change_color");
+                
+
+
+
+            }
+            e.target.classList.add("change_color");
+
+            
+
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

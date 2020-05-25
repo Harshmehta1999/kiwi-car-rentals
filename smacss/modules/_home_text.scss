@@ -1,0 +1,48 @@
+.landing_info {
+    padding: 20px;
+    width: 100%;
+    .start_text {
+        position: absolute;
+        top: 25%;
+        line-height: 55px;
+        h1 {
+            font-size: 45px;
+            color: #F8D145;
+        }
+        h2 {
+            font-size: 40px;
+            color: white;
+        }
+    }
+    .explore_btn {
+        background-color: white;
+        width: 150px;
+        padding: 10px;
+        border-radius: 7px;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+.show {
+    transform: translateX(-1000px);
+    transition: all .8s;
+    transition-timing-function: ease-in;
+
+    // transition-delay: 0.2s;
+}
+
+.home_page{
+    min-height: 100vh;
+
+}
+
+.car_animation{
+    background-image: url(../images/sedan.png);
+    background-position: center;
+    transform: translateX(-1000px);
+    background-size: cover;
+}

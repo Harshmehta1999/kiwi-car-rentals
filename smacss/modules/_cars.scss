@@ -1,0 +1,311 @@
+            // .cars_section {
+            //     padding: 20px;
+            //     .cars_heading {
+            //         color: #F8D145;
+            //         margin-top: 30px;
+            //     }
+            //     .car_types {
+            //         margin-top: 50px;
+            //         display: inline-flex;
+            //         width: 100%;
+            //         text-align: center;
+            //         .regular_btn {
+            //             width: 50%;
+            //             padding: 10px;
+            //             border: 1px solid white;
+            //             border-radius: 7px;
+            //             color: #212121;
+            //             background-color: #F8D145
+            //         }
+            //         .luxury_btn {
+            //             width: 50%;
+            //             padding: 10px;
+            //             border: 1px solid white;
+            //             border-radius: 7px;
+            //             color: #212121;
+            //             background-color: #F8D145
+            //         }
+            //     }
+            //     .carblock_one,
+            //     .carblock_two,
+            //     .carblock_three,
+            //     .carblock_four,
+            //     .carblock_five,
+            //     .carblock_six,
+            //     .carblock_seven,
+            //     .carblock_eight {
+            //         margin-top: 50px;
+            //         .carone_img,
+            //         .cartwo_img,
+            //         .carthree_img,
+            //         .carfour_img,
+            //         .carfive_img,
+            //         .carsix_img,
+            //         .carseven_img,
+            //         .careight_img {
+            //             background-size: cover;
+            //             background-position: 0;
+            //             background-repeat: no-repeat;
+            //             height: 120px;
+            //         }
+            //         .carone_img {
+            //             background-image: url(../images/Toyota_Corolla.jpg);
+            //         }
+            //         .cartwo_img {
+            //             background-image: url(../images/largecar_one.jpeg);
+            //         }
+            //         .carthree_img {
+            //             background-image: url(../images/largecar_two.jpg);
+            //         }
+            //         .carfour_img {
+            //             background-image: url(../images/rv_one.jpg);
+            //         }
+            //         .carfive_img {
+            //             background-image: url(../images/rv_two.jpg);
+            //         }
+            //         .carsix_img {
+            //             background-image: url(../images/smallcar_two.jpg);
+            //         }
+            //         .carseven_img {
+            //             background-image: url(../images/motorbike_one.jpeg);
+            //         }
+            //         .careight_img {
+            //             background-image: url(../images/motorbike_two.jpeg);
+            //         }
+            //         .white_bg {
+            //             height: 30px;
+            //             width: 100%;
+            //             background-color: white;
+            //             display: flex;
+            //             flex-direction: row;
+            //             position: relative;
+
+            //        #toyota_car,#Ford_car,#jaquar_car,#mercedes_car,#ford_rv,#hyndai_car,#yamaha_car,#bmw_car{
+            //             position: absolute;
+            //             left: 0;
+            //             padding-left: 20px;
+            //             padding-top: 4px;
+            //         }
+            //         #toyota_price,#jaquar_price,#Ford_price,#mercedes_price,#ford_rv_price,#hyndai_price,#yamaha_price,#bmw_price {
+            //             position: absolute;
+            //             right: 0;
+            //             padding-right: 20px;
+            //             padding-top: 4px;
+            //         }
+
+            //         }
+ 
+            //         .more_info_box {
+            //             background-color: lightgray;
+            //             .more_info_div {
+            //                 display: flex;
+            //                 justify-content: space-around;
+            //                 padding: 7px
+            //             }
+            //         }
+            //         .book_btn {
+            //             background-color: #F8D145;
+            //             width: 100%;
+            //             padding: 7px;
+            //             text-align: center;
+            //             box-sizing: border-box;
+            //         }
+            //     }
+            // }
+            .data-block-div{
+                padding-bottom: 30px;
+
+            }
+
+            .data-block{
+                background-color: #F8D145;
+                padding-right: 20px;
+                padding-left: 20px;
+                margin: 30px auto;
+                width: 80%;
+
+                .datablock-heading{
+                    padding-top: 15px;
+                }
+
+                
+
+                .location-data-block, .pickupdate-data-block, .people-data-block{
+              
+                    margin-top: 20px;
+                    border: 2px solid black;
+                    color: black;
+                 
+                }
+
+            
+
+            }
+
+            .car-main-heading{
+                color: #F8D145;
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+
+            .cars-card{
+                margin-top: 20px;
+                /* display: -webkit-box; */
+                overflow: visible;
+                /* width: 100%; */
+                display: -webkit-box;
+                overflow-x: auto;
+
+                .car-block{
+                    background-color:white;
+                    // padding-right: 20px;
+                    // padding-left: 20px;
+                    width: 70%;
+                    margin-left: 20px;
+                    
+                 
+                    height: auto;
+                }
+       
+                
+
+
+            .car-heading{
+                padding-top: 30px;
+                margin-left: 20px;
+            }
+
+            .car-info{
+                margin-left: 20px;
+            }
+
+            .car-price{
+                margin-top: 25px;
+                display: flex;
+                
+                img{
+                    height: 15px;
+                    width: 15px;
+                    opacity: .7;
+           
+                }
+
+                h4{
+                    padding-left: 20px;
+                
+                }
+            }
+
+            .car-average{
+                margin-top: 10px;
+                display: flex;
+                
+                img{
+                    height: 20px;
+                    width: 20px;
+                    opacity: .7;
+                    
+                }
+
+                h4{
+                    padding-left: 20px;
+                }
+                
+            }
+
+            .car-people {
+                margin-top: 10px;
+                display: flex;
+                
+                img{
+                    height: 20px;
+                    width: 20px;
+                    opacity: .7;
+                }
+
+                h4{
+                    padding-left: 20px;
+                }
+                
+
+            }
+
+            .car-img,.car-img-2 {
+                overflow: hidden;
+                border: 2px solid;
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 200px;
+                background-position-x: 30px;
+                margin-top: 30px;
+                overflow-x: hidden;
+                background-repeat: no-repeat;
+          
+
+            }
+
+            .car-img{
+                background-image: url(/images/audi.png);
+            }
+
+            .car-img-2{
+                background-image: url(/images/2019-toyota-corolla.png);
+            }
+
+            .car-button{
+                display: flex;
+                margin-top: 30px;
+
+                .detail-btn{
+                    width: 40%;
+                    display: flex;
+                    padding: 10px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .book-btn{
+                    background: #F8D145;
+                    width: 60%;
+                    display: flex;
+                    padding: 10px;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+
+        .edit-icon-box {
+            position: absolute;
+            right: 10px;
+  
+           width: 20px;
+            height: 20px;
+        }
+        .edit-icon-box-date {
+      
+            position: absolute;
+            right: 10px;
+            width: 20px;
+             height: 20px;
+         }
+
+         .edit-icon-box-people {
+      
+            position: absolute;
+            right: 10px;
+            width: 20px;
+             height: 20px;
+         }
+
+
+        #location_update , #date_update , #person_update{
+            display: flex;
+            align-items: center;
+            position: relative;
+
+        }

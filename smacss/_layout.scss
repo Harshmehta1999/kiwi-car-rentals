@@ -1,0 +1,35 @@
+#location_update,
+#date_update,
+#person_update,#car_update,#fuel_update,#distance_update {
+    color: #212121;
+    font-family: 'open-sans', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+    border: 1px solid #212121;
+    padding: 10px;
+
+}
+
+#date_update,
+#person_update,#car_update,#distance_update,#fuel_update{
+    margin-top: 10px;
+}
+
+.fs40 a {
+    color: #F8D145;
+    float: right;
+    text-decoration: underline;
+}
+
+.book_btn,.explore_btn,.vehicle_btn,.payment_btn,.next_btn{
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 1.5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+a{
+    color: black
+}

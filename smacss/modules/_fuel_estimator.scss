@@ -1,0 +1,61 @@
+        // .fuel_section {
+        //     padding: 20px;
+        //     .fuel_heading {
+        //         color: #F8D145;
+        //         margin-top: 30px;
+        //     }
+        //     .fuel_calculator {
+        //         margin-top: 30px;
+        //     }
+        //     .payment_btn {
+        //         background-color: #F8D145;
+        //         width: 150px;
+        //         padding: 10px;
+        //         border-radius: 7px;
+        //         position: absolute;
+        //         bottom: 10%;
+        //         left: 50%;
+        //         transform: translate(-50%, -50%);
+        //         text-align: center;
+        //     }
+        // }
+
+        .fuel-estimator{
+                background-color: #F8D145;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding-top: 15px;
+                padding-left: 20px;
+                padding-bottom: 30px;;
+
+                .fuel-input{
+                        background-color: white;
+                        margin-right: 20px;
+                        margin-top: 20px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                                background-color: white;
+                                height: 30px;
+                                width: 30px;
+                                padding-left: 10px;
+                        }
+                        
+                }
+
+                      .payment_btn {
+                background-color: #F8D145;
+                width: 150px;
+                padding: 10px;
+                border-radius: 7px;
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+
+        }

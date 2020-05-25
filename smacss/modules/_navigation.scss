@@ -1,0 +1,27 @@
+    .nav_bar {
+        width: 100vw;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: space-between;
+        .logo {
+            width: 100%;
+            color: #F8D145;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    .menu_icon,
+    .back_icon {
+        margin-top: 5px;
+    }
+    
+    .back_icon {
+        filter: invert(1)
+    }
